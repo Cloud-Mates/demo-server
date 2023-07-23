@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
     res.write("4 \n");
     res.write("5 \n");
     res.write("6 \n");
+    res.write("7 \n");
     res.end('Response ends here!');
 })
 
