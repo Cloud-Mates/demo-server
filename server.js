@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
     res.write("7 \n");
     res.write("8 \n");
     res.write("9 \n");
+    res.write("10 \n");
     res.end('Response ends here!');
 })
 
