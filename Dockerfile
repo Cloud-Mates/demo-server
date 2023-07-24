@@ -15,4 +15,4 @@ COPY --chown=node:node . .
 
 EXPOSE 3001
 
-CMD [ "node", "app.js" ]
+CMD [ "node", "server.js" ]

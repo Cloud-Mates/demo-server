@@ -1,7 +1,8 @@
 ==> docker build -t <tag_name>
     build image form dockerfile
-==> docker run --name nodejs-image-demo -p 80:8080 -d your_dockerhub_username/nodejs-image-demo	
-    Create and run a new container from an image
+==> docker run --name nodejs-image-demo -p 3001:3000 -d  -i -t test-image
+==> docker run --name nodejs-image-demo -p 3001:3000 -d your_dockerhub_username/nodejs-image-demo	
+    Create and run a new container from an image (bind port of 3001:external with 3000:internal)
 ==> docker stop `<id>`
     Stop a container
 ==> docker restart `<id>`
