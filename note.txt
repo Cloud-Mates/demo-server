@@ -1,4 +1,4 @@
-==> docker build -t <tag_name>
+==> docker build -t <tag_name> .
     build image form dockerfile
 ==> docker run --name nodejs-image-demo -p 3001:3000 -d  -i -t test-image
 ==> docker run --name nodejs-image-demo -p 3001:3000 -d your_dockerhub_username/nodejs-image-demo	
