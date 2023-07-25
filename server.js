@@ -1,23 +1,25 @@
-const express = require('express')
+// const express = require('express');
+import express from "express";
+
 const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
     res.write("Hello World! \n");
-    res.write("1 \n");
-    res.write("2 \n");
-    res.write("3 \n");
-    res.write("4 \n");
-    res.write("5 \n");
-    res.write("6 \n");
-    res.write("7 \n");
-    res.write("8 \n");
-    res.write("9 \n");
-    res.write("10 \n");
-    res.write("11 \n");
-    res.end('Response ends here!');
+    var flag = 0;
+    var interval = setInterval(() => {
+        if (flag < 5) {
+            flag++;
+            res.write(`flag: ${flag}, data: ${(Math.random()*1000).toFixed(0)}, time: ${Date()} \n`);
+            // res.write(`${{flag: flag, data: (Math.random()*1000).toFixed(0) }}`);
+            // console.log(`flag: ${flag} `);
+        } else {
+            res.end('Response ends here!');
+            clearInterval(interval)
+        }
+    }, 1000);
 })
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
-})
+});
