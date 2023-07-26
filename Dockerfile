@@ -1,20 +1,14 @@
+FROM node:16
 
-FROM node:10
-
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
-WORKDIR /home/node/app
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-USER root
-
-RUN npm install
-
 RUN npm install pm2 -g
+RUN npm install 
 
-COPY --chown=node:node . .
+COPY . .
 
-EXPOSE 3001
+EXPOSE 4000
 
-CMD [ "pm2-runtime", "server.js" ]
+CMD ["pm2-runtime","index.js"]
