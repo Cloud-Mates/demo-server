@@ -11,8 +11,12 @@ USER node
 
 RUN npm install
 
+RUN npm install pm2 -g
+
 COPY --chown=node:node . .
 
 EXPOSE 3001
 
-CMD [ "node", "server.js" ]
+# CMD [ "node", "server.js" ]
+
+CMD [ "pm2", "start", "npm", "--name demo-server", "--start" ]
