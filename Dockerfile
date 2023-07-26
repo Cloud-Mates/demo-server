@@ -7,11 +7,11 @@ WORKDIR /home/node/app
 
 COPY package*.json ./
 
+USER node
+
 RUN deluser --remove-home node \
   && addgroup -S node -g 999 \
   && adduser -S -G node -u 999 node
-  
-USER node
 
 RUN npm install
 
