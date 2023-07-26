@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
             res.end('Response ends here!');
             clearInterval(interval)
         }
-    }, 1500);
+    }, 1000);
 })
 
 app.listen(port, () => {
