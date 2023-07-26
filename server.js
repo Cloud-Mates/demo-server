@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     var interval = setInterval(() => {
         if (flag < 5) {
             flag++;
-            res.write(`flag: ${flag}, data: ${(Math.random()*1000).toFixed(0)}, time: ${Date()} \n`);
+            res.write(`{flag: ${flag}, data: ${(Math.random()*1000).toFixed(0)}, time: ${Date().toString().slice(0, 24) + "\n"}}`);
             // res.write(`${{flag: flag, data: (Math.random()*1000).toFixed(0) }}`);
             // console.log(`flag: ${flag} `);
         } else {
