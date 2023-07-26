@@ -10,14 +10,12 @@ app.get('/', (req, res) => {
     var interval = setInterval(() => {
         if (flag < 5) {
             flag++;
-            res.write(`{flag: ${flag}, data: ${(Math.random()*1000).toFixed(0)}, time: ${Date().toString().slice(0, 24) + "\n"}}`);
-            // res.write(`${{flag: flag, data: (Math.random()*1000).toFixed(0) }}`);
-            // console.log(`flag: ${flag} `);
+            res.write(`{"count": "${flag}", "data": "${Math.floor(1000 + Math.random() * 9000)}", "time": "${Date().toString().slice(0, 24)}"}`);
         } else {
             res.end('Response ends here!');
             clearInterval(interval)
         }
-    }, 1000);
+    }, 1500);
 })
 
 app.listen(port, () => {
