@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 3001
 
-CMD ["pm2-runtime","index.js"]
+CMD ["pm2-runtime","server.js"]
