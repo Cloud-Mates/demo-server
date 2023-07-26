@@ -7,7 +7,7 @@ WORKDIR /home/node/app
 
 COPY package*.json ./
 
-USER root
+USER node
 
 RUN npm install
 
