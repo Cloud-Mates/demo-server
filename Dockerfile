@@ -1,5 +1,5 @@
 
-FROM node:10-alpine
+FROM node:16-ubuntu
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
@@ -19,4 +19,4 @@ EXPOSE 3001
 
 # CMD [ "node", "server.js" ]
 
-CMD [ "pm2", "start", "npm", "--name demo-server", "--start" ]
+CMD [ "pm2-runtime", "server.js" ]
