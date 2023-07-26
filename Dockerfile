@@ -9,9 +9,9 @@ COPY package*.json ./
 
 USER node
 
-RUN sudo npm install
+RUN npm install
 
-RUN sudo npm install pm2 -g
+RUN npm install pm2 -g
 
 COPY --chown=node:node . .
 
