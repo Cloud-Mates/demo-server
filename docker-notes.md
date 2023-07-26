@@ -25,3 +25,14 @@
       - all networks not used by at least one container
       - all images without at least one container associated to them
       - all build cache
+
+
+
+
+#### links:
+
+https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#global-npm-dependencies
+
+
+
+<!-- # CMD [ "node", "server.js" ] -->
