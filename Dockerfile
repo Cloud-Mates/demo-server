@@ -9,6 +9,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 4000
+EXPOSE 3001
 
 CMD ["pm2-runtime","index.js"]
