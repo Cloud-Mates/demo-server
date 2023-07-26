@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import fs from "fs";
 
 async function main(params) {
 	// const response = await fetch('http://localhost:3000');
@@ -7,15 +8,15 @@ async function main(params) {
 	try {
 		for await (const chunk of response.body) {
 			try {
-				console.dir(JSON.parse(chunk.toString()));
-				if (JSON.parse(chunk.toString()).count == 5) {
+				const data = JSON.parse(chunk.toString());
+				console.dir(data);
+				fs.appendFileSync("justForTesting/data.txt", `data: ${data.data}  ||  time: ${data.time} \n`);
+				if (data.count == 5) {
 					main();
 				}
 			} catch (e) {
 				console.dir(chunk.toString());
 			}
-
-			// console.log(JSON.stringify(chunk.toJSON()));
 		}
 	} catch (err) {
 		console.error(err.stack);
