@@ -9,13 +9,9 @@ COPY package*.json ./
 
 USER node
 
-RUN deluser --remove-home node \
-  && addgroup -S node -g 999 \
-  && adduser -S -G node -u 999 node
-
 RUN npm install
 
-RUN npm install pm2 -g
+RUN sudo npm install pm2 -g
 
 COPY --chown=node:node . .
 
