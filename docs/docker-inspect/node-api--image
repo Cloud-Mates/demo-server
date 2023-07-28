@@ -1,0 +1,101 @@
+[
+    {
+        "Id": "sha256:c289494345683605ee738fafd9c4a4c57fd889551dfb2f46c24b2b73cee70b22",
+        "RepoTags": [
+            "node-api:latest"
+        ],
+        "RepoDigests": [],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2023-07-28T12:10:41.169031861+05:30",
+        "Container": "",
+        "ContainerConfig": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": null,
+            "Cmd": null,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": null
+        },
+        "DockerVersion": "",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3000/tcp": {},
+                "3001/tcp": {},
+                "3002/tcp": {},
+                "3003/tcp": {},
+                "3004/tcp": {},
+                "3005/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NODE_VERSION=16.20.1",
+                "YARN_VERSION=1.22.19"
+            ],
+            "Cmd": [
+                "pm2-runtime",
+                "server.js"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "/usr/src/app",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 442319326,
+        "VirtualSize": 442319326,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/kgwy42b40arixxb6xzpmjhhcd/diff:/var/lib/docker/overlay2/cdf33hti772vbbuetcso5ya91/diff:/var/lib/docker/overlay2/fktmgrccena8hzyjcw63kq4s3/diff:/var/lib/docker/overlay2/edms5hmfu4nog509aqqee31ry/diff:/var/lib/docker/overlay2/4d0cf8fc77b93fdb51682016b3b0de3c3c31fe6dc714fb47ee0ed637983adf26/diff:/var/lib/docker/overlay2/ae2730f383af59baa762b05ccd568777f30fa1f79d70366c7cb279ec851c21b1/diff:/var/lib/docker/overlay2/ef06dd1d710e3cc62a081ec98d72f473756ad1ee77eb1c56b7a914ea7636722a/diff:/var/lib/docker/overlay2/e6a7792e3537f86244219c58267458bf28be3deecf8263aa3f8bb7b2052c7dbf/diff",
+                "MergedDir": "/var/lib/docker/overlay2/xtdwd43t76tlv9ngo5sv3j4hs/merged",
+                "UpperDir": "/var/lib/docker/overlay2/xtdwd43t76tlv9ngo5sv3j4hs/diff",
+                "WorkDir": "/var/lib/docker/overlay2/xtdwd43t76tlv9ngo5sv3j4hs/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:78a822fe2a2d2c84f3de4a403188c45f623017d6a4521d23047c9fbb0801794c",
+                "sha256:87820ee0191d65511d319d471b74068048b93b62bf3f8ddea56ed0ce1d06d7f3",
+                "sha256:323c772d0cd8ea2f7212a2c61a6bf98d2fd16a8ea1f12197295caaad34a57e38",
+                "sha256:7b71a9bb851ac0e1f0ecbf9539c772198952c4cc1831e2af967d4f4ce5de3d40",
+                "sha256:9813665b8fbc1e84e20287e6b7485fab0cc86efff536853954174f65025a6bcb",
+                "sha256:e070e30aaa362be7826fe27e95fa8da5655dd78cc18079f2faae6e26fd75c913",
+                "sha256:de3e3b125c00129441246d389e126569a0364e01565a541c6b0957a620bec592",
+                "sha256:86566d5430281caa846a5a7ced0aab36d4328e86b01af5725075c9eb03c3eb14",
+                "sha256:59c505ca117f2c2d28de5f54c6901b4713262519485b0a9987131fffb0c4459c"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2023-07-28T12:10:42.867498453+05:30"
+        }
+    }
+]
