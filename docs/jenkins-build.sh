@@ -1,3 +1,4 @@
+git pull origin main                                    # pull src code from github
 sudo docker ps -a | grep "nodejs-image-demo" &&         # if docker container named "nodejs-image-demo" exists go to next
 sudo docker stop nodejs-image-demo &&                   # stop the container named "nodejs-image-demo", if success got to next
 sudo docker rm nodejs-image-demo  &&                    # remove the container named "nodejs-image-demo"
