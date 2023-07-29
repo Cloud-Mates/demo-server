@@ -18,9 +18,9 @@ spec:
         app: nodeapi
     spec:
       containers:
-      - image: node-api
+      - image: nodejs-demo-image
         name: node-api
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         resources: {}
         ports:
           - containerPort: 3000 
