@@ -1,0 +1,10 @@
+{
+    "data": {
+        "apiVersion": "v1",
+        "items": [],
+        "kind": "PersistentVolumeList",
+        "metadata": {
+            "resourceVersion": "7179"
+        }
+    }
+}

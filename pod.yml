@@ -4,7 +4,7 @@ metadata:
   name: node-api-pod
 spec:
   containers:
-    - image: nodejs-demo-image
+    - image: 8bitsouvik/nodejs-demo-image
       name: node-api
       imagePullPolicy: IfNotPresent
       resources: {}

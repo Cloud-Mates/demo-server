@@ -1,0 +1,163 @@
+{
+    "data": {
+        "apiVersion": "v1",
+        "items": [
+            {
+                "metadata": {
+                    "creationTimestamp": "2023-07-30T15:59:10.000Z",
+                    "labels": {
+                        "component": "apiserver",
+                        "provider": "kubernetes"
+                    },
+                    "managedFields": [
+                        {
+                            "apiVersion": "v1",
+                            "fieldsType": "FieldsV1",
+                            "fieldsV1": {
+                                "f:metadata": {
+                                    "f:labels": {
+                                        ".": {},
+                                        "f:component": {},
+                                        "f:provider": {}
+                                    }
+                                },
+                                "f:spec": {
+                                    "f:clusterIP": {},
+                                    "f:internalTrafficPolicy": {},
+                                    "f:ipFamilyPolicy": {},
+                                    "f:ports": {
+                                        ".": {},
+                                        "k:{\"port\":443,\"protocol\":\"TCP\"}": {
+                                            ".": {},
+                                            "f:name": {},
+                                            "f:port": {},
+                                            "f:protocol": {},
+                                            "f:targetPort": {}
+                                        }
+                                    },
+                                    "f:sessionAffinity": {},
+                                    "f:type": {}
+                                }
+                            },
+                            "manager": "kube-apiserver",
+                            "operation": "Update",
+                            "time": "2023-07-30T15:59:10.000Z"
+                        }
+                    ],
+                    "name": "kubernetes",
+                    "namespace": "default",
+                    "resourceVersion": "232",
+                    "uid": "90eca2ce-ccac-4ee2-8c50-0d7e75955445"
+                },
+                "spec": {
+                    "clusterIP": "10.96.0.1",
+                    "clusterIPs": [
+                        "10.96.0.1"
+                    ],
+                    "internalTrafficPolicy": "Cluster",
+                    "ipFamilies": [
+                        "IPv4"
+                    ],
+                    "ipFamilyPolicy": "SingleStack",
+                    "ports": [
+                        {
+                            "name": "https",
+                            "port": 443,
+                            "protocol": "TCP",
+                            "targetPort": 8443
+                        }
+                    ],
+                    "sessionAffinity": "None",
+                    "type": "ClusterIP"
+                },
+                "status": {
+                    "loadBalancer": {}
+                }
+            },
+            {
+                "metadata": {
+                    "annotations": {
+                        "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"labels\":{\"run\":\"nodeapi\"},\"name\":\"nodeapi\",\"namespace\":\"default\"},\"spec\":{\"ports\":[{\"port\":3000,\"protocol\":\"TCP\"}],\"selector\":{\"app\":\"nodeapi\"},\"type\":\"NodePort\"}}\n"
+                    },
+                    "creationTimestamp": "2023-07-30T18:43:40.000Z",
+                    "labels": {
+                        "run": "nodeapi"
+                    },
+                    "managedFields": [
+                        {
+                            "apiVersion": "v1",
+                            "fieldsType": "FieldsV1",
+                            "fieldsV1": {
+                                "f:metadata": {
+                                    "f:annotations": {
+                                        ".": {},
+                                        "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                                    },
+                                    "f:labels": {
+                                        ".": {},
+                                        "f:run": {}
+                                    }
+                                },
+                                "f:spec": {
+                                    "f:externalTrafficPolicy": {},
+                                    "f:internalTrafficPolicy": {},
+                                    "f:ports": {
+                                        ".": {},
+                                        "k:{\"port\":3000,\"protocol\":\"TCP\"}": {
+                                            ".": {},
+                                            "f:port": {},
+                                            "f:protocol": {},
+                                            "f:targetPort": {}
+                                        }
+                                    },
+                                    "f:selector": {},
+                                    "f:sessionAffinity": {},
+                                    "f:type": {}
+                                }
+                            },
+                            "manager": "kubectl-client-side-apply",
+                            "operation": "Update",
+                            "time": "2023-07-30T18:43:40.000Z"
+                        }
+                    ],
+                    "name": "nodeapi",
+                    "namespace": "default",
+                    "resourceVersion": "4805",
+                    "uid": "31dd97d4-735c-475e-9eda-e08d7f101797"
+                },
+                "spec": {
+                    "clusterIP": "10.107.116.83",
+                    "clusterIPs": [
+                        "10.107.116.83"
+                    ],
+                    "externalTrafficPolicy": "Cluster",
+                    "internalTrafficPolicy": "Cluster",
+                    "ipFamilies": [
+                        "IPv4"
+                    ],
+                    "ipFamilyPolicy": "SingleStack",
+                    "ports": [
+                        {
+                            "nodePort": 31724,
+                            "port": 3000,
+                            "protocol": "TCP",
+                            "targetPort": 3000
+                        }
+                    ],
+                    "selector": {
+                        "app": "nodeapi"
+                    },
+                    "sessionAffinity": "None",
+                    "type": "NodePort"
+                },
+                "status": {
+                    "loadBalancer": {}
+                }
+            }
+        ],
+        "kind": "ServiceList",
+        "metadata": {
+            "resourceVersion": "7179"
+        }
+    }
+}
