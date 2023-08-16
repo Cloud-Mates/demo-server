@@ -1,7 +1,7 @@
 ==> `docker build -t <tag_name> .`
     build image form dockerfile
-==> `docker run --name nodejs-image-demo -p 3001:3000 -p 3002:3000 -d <image_id/tag>`
-==> `docker run --name nodejs-image-demo -p 3001:3000 -d your_dockerhub_username/nodejs-image-demo`
+==> `docker run --name nodejs-container-demo --restart unless-stopped -p 3001:3000 -p 3002:3000 -d <image_id/tag>`
+==> `docker run --name nodejs-container-demo -p 3001:3000 -d your_dockerhub_username/nodejs-image-demo`
     Create and run a new container from an image (bind port of 3001:external with 3000:internal)
 ==> `docker stop <container_id/name>`
     Stop a container
@@ -37,4 +37,4 @@ https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#global-npm
 
 
 
-<!-- # CMD [ "node", "server.js" ] -->
+==> `curl -X GET 172.105.36.162:5000/v2/_catalog`

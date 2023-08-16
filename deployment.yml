@@ -24,4 +24,6 @@ spec:
         resources: {}
         ports:
           - containerPort: 3000 
+      nodeSelector:
+          # role: worker
 status: {}
