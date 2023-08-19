@@ -4,7 +4,11 @@ import express from "express";
 const app = express()
 const port = 3000
 
+
+app.use("/static", express.static("public"));
+
 app.get('/', (req, res) => {
+    res.header("ngrok-skip-browser-warning", "1")
     res.write("Hello World! \n");
     var flag = 0;
     var interval = setInterval(() => {
