@@ -54,16 +54,31 @@ kubectl port-forward -n monitoring prometheus-grafana-69fbbb8fc7-qckn8 52222:300
 # localhost:8080 refused ... 
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 
-# invalid userid/password
-$  find / -type f -name grafana.db
-output: /var/lib/kubelet/pods/............/volumes/kubernetes.io~empty-dir/storage/grafana.db
 
-$  sudo sqlite3 /var/lib/kubelet/pods/............/volumes/kubernetes.io~empty-dir/storage/grafana.db
+# reset userid/password
 
-Finally,
+$ kubectl get pods --namespace monitoring
 
-sqlite>  update user set password = '59acf18b94d7eb0694c61e60ce44c110c7a683ac6a8f09580d626f90f4a242000746579358d77dd9e570e83fa24faa88a8a6', salt = 'F3FAxVm33R' where login = 'admin';
-sqlite>  .exit
+$ sudo kubectl exec --namespace monitoring -it prometheus-grafana-...... -- sh
+
+__
+|  */usr/share/grafana $*  grafana-cli admin reset-admin-password "yourNewPasswordHere"
+| 
+|  -------- OR ----------
+| 
+| */usr/share/grafana $*  find / -type f -name grafana.db
+| output: /var/lib/kubelet/pods/............/volumes/kubernetes.io~empty-dir/storage/grafana.db
+| 
+| */usr/share/grafana $*  sudo sqlite3 /var/lib/kubelet/pods/............/volumes/kubernetes.io~empty-dir/storage/grafana.db
+| 
+| Finally,
+| 
+| */usr/share/grafana sqlite>*  update user set password = '59acf18b94d7eb0694c61e60ce44c110c7a683ac6a8f09580d626f90f4a242000746579358d77dd9e570e83fa24faa88a8a6', salt = 'F3FAxVm33R' where login = 'admin';
+| */usr/share/grafana sqlite>*  .exit
+|__
 
 **This will set the username/password to admin/admin.**
 
+
+# delete namespaces
+kubectl delete namespace <namspace-name>
