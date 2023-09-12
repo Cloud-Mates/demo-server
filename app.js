@@ -8,6 +8,11 @@ const port = 3000
 app.use("/static", express.static("public"));
 
 app.get('/', (req, res) => {
+    res.header("ngrok-skip-browser-warning", "1");
+    res.send("Hello World! \n");
+});
+
+app.get('/stream', (req, res) => {
     res.header("ngrok-skip-browser-warning", "1")
     res.write("Hello World! \n");
     var flag = 0;
