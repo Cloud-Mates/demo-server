@@ -42,7 +42,7 @@ kubectl --namespace monitoring get pods -o wide
 
 # Do port forwarding from the pod: prometheus-grafana...
 kubectl port-forward -n monitoring prometheus-grafana-69fbbb8fc7-qckn8 52222:3000
-
+kubectl port-forward -n monitoring prometheus-grafana-85f995576b-72qvb  --address 0.0.0.0 52222:3000
 
 
 
