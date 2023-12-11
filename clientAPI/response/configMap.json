@@ -4,13 +4,13 @@
         "items": [
             {
                 "data": {
-                    "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIDBjCCAe6gAwIBAgIBATANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwptaW5p\na3ViZUNBMB4XDTIzMDcyNjE5NDQ1M1oXDTMzMDcyNDE5NDQ1M1owFTETMBEGA1UE\nAxMKbWluaWt1YmVDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMVo\nLaXjIF2AuWfCr38zndhnwa63GBgZV83LFMvZXJvw4mWBGfOYXeZbxsx+KLZag5d0\niE2JPv2Phc5BmytKBBGvEMUY+OVaTbC+aH+/Co224S1Ur77mlzeGiH4gNtl76oLA\nHoQrLy4ekYggQxaCTGalUi4lMbKGawwMCR4CkpunS2r467mLd+tgmg7UFXPmO85K\n0ET1ertP1QwTCKF9LqYyIXM1+xlDIdIAoAz54QVkEkFNDoi8yLAtwx8i6jNagamN\nEsftdZkhJFZ4kUM1sk7bXWCCR3MFixh4alP7OlC8I9Pjot2ejkHI5gFDII9NWY9o\njspr9jD7+Kk/p8otlCcCAwEAAaNhMF8wDgYDVR0PAQH/BAQDAgKkMB0GA1UdJQQW\nMBQGCCsGAQUFBwMCBggrBgEFBQcDATAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQW\nBBQSEWAklpBebBGW0sK1DRBeWRDZpTANBgkqhkiG9w0BAQsFAAOCAQEAGTmcVFe0\nMm5nl57E/63gI+ZxjjLWsgQPcn6OAaU1BbAcVJ41/luxmUzAGwDv3dIHOGXmu5K5\nIR76f5ZGxGS22nA6qTXobGpzNwaJPL/mKRM39olkPqom+hcDi2LUYTdeLQVZd9sG\nNIVn6UEI8VlNdS63Bf46MT2xd9XAciXQlS1YsWJDjLHTCERDCn5EG4P76WM27tfP\nL3fR1YKIvTEx4pYMLFg0W3/qqAo/bMDlCptepz30KJtY9szChBqpjFi+C9qRQv7C\nXGohM3Vm6ABWVRdSmZO3y6Z9riDc8cP32KdkmHzO3OgnxAAlT7ulZAyzyL5xIvjN\n18T/6Ipu5T9PIw==\n-----END CERTIFICATE-----\n"
+                    "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIBeDCCAR2gAwIBAgIBADAKBggqhkjOPQQDAjAjMSEwHwYDVQQDDBhrM3Mtc2Vy\ndmVyLWNhQDE3MDE2NzE5NzYwHhcNMjMxMjA0MDYzOTM2WhcNMzMxMjAxMDYzOTM2\nWjAjMSEwHwYDVQQDDBhrM3Mtc2VydmVyLWNhQDE3MDE2NzE5NzYwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAAT2k1g6AVEuE2xXfunMYw8Ne+22gq3sdETguRTNMU8f\nxJ9F/xxkM8FWCeG5zme4Kwi85hzfwEGnMQoPCTJNw3yQo0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUu+jWk3mQwpxXbc65t+kD\nmhg7gkAwCgYIKoZIzj0EAwIDSQAwRgIhALj3RQsKN1mv/q/9gwjiKAGqLalwUDCJ\n9hn3ax6NYPXOAiEAt4+kR+k4HRiNc/ZLEDnghnnmo/2UolouhlqI2yPaYEs=\n-----END CERTIFICATE-----\n"
                 },
                 "metadata": {
                     "annotations": {
                         "kubernetes.io/description": "Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters."
                     },
-                    "creationTimestamp": "2023-07-30T15:59:24.000Z",
+                    "creationTimestamp": "2023-12-04T06:40:06.000Z",
                     "managedFields": [
                         {
                             "apiVersion": "v1",
@@ -27,21 +27,21 @@
                                     }
                                 }
                             },
-                            "manager": "kube-controller-manager",
+                            "manager": "k3s",
                             "operation": "Update",
-                            "time": "2023-07-30T15:59:24.000Z"
+                            "time": "2023-12-04T06:40:06.000Z"
                         }
                     ],
                     "name": "kube-root-ca.crt",
                     "namespace": "default",
-                    "resourceVersion": "366",
-                    "uid": "132069c2-acf9-45cf-865d-b18cc9f8de1a"
+                    "resourceVersion": "472",
+                    "uid": "f00739b0-902d-4cd5-8f7e-99277e16d6e1"
                 }
             }
         ],
         "kind": "ConfigMapList",
         "metadata": {
-            "resourceVersion": "7179"
+            "resourceVersion": "18730"
         }
     }
 }

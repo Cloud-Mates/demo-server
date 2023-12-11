@@ -2,7 +2,8 @@
 import http from "http";
 
 // const url = "http://localhost:3000";
-const url = 'http://172.105.36.162/dockerized/';
+// const url = 'http://172.105.36.162/dockerized/';
+const url = 'http://192.168.0.112:30000';
 
 http.get(url, res => {
   res.setEncoding("utf8");

@@ -20,3 +20,5 @@ sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 ran
 
 # localhost:8080 refused ... 
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+
+kubectl proxy --port=8080 --address 0.0.0.0

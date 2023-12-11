@@ -4,7 +4,7 @@
         "items": [
             {
                 "metadata": {
-                    "creationTimestamp": "2023-07-30T15:59:07.000Z",
+                    "creationTimestamp": "2023-12-04T06:39:46.000Z",
                     "labels": {
                         "kubernetes.io/metadata.name": "default"
                     },
@@ -20,14 +20,14 @@
                                     }
                                 }
                             },
-                            "manager": "kube-apiserver",
+                            "manager": "k3s",
                             "operation": "Update",
-                            "time": "2023-07-30T15:59:07.000Z"
+                            "time": "2023-12-04T06:39:46.000Z"
                         }
                     ],
                     "name": "default",
-                    "resourceVersion": "41",
-                    "uid": "0f7e687e-7aa3-48ab-b4d7-210fc0b3135c"
+                    "resourceVersion": "9",
+                    "uid": "ed659e9f-132f-4479-a1fe-178710e13911"
                 },
                 "spec": {
                     "finalizers": [
@@ -40,7 +40,7 @@
             },
             {
                 "metadata": {
-                    "creationTimestamp": "2023-07-30T15:59:07.000Z",
+                    "creationTimestamp": "2023-12-04T06:39:46.000Z",
                     "labels": {
                         "kubernetes.io/metadata.name": "kube-node-lease"
                     },
@@ -56,14 +56,14 @@
                                     }
                                 }
                             },
-                            "manager": "kube-apiserver",
+                            "manager": "k3s",
                             "operation": "Update",
-                            "time": "2023-07-30T15:59:07.000Z"
+                            "time": "2023-12-04T06:39:46.000Z"
                         }
                     ],
                     "name": "kube-node-lease",
-                    "resourceVersion": "39",
-                    "uid": "534c093f-a64b-4008-914e-3f340e712468"
+                    "resourceVersion": "35",
+                    "uid": "4e17b39b-4ca9-4ac2-a5fb-a39c68fb0af7"
                 },
                 "spec": {
                     "finalizers": [
@@ -76,7 +76,7 @@
             },
             {
                 "metadata": {
-                    "creationTimestamp": "2023-07-30T15:59:07.000Z",
+                    "creationTimestamp": "2023-12-04T06:39:46.000Z",
                     "labels": {
                         "kubernetes.io/metadata.name": "kube-public"
                     },
@@ -92,14 +92,14 @@
                                     }
                                 }
                             },
-                            "manager": "kube-apiserver",
+                            "manager": "k3s",
                             "operation": "Update",
-                            "time": "2023-07-30T15:59:07.000Z"
+                            "time": "2023-12-04T06:39:46.000Z"
                         }
                     ],
                     "name": "kube-public",
-                    "resourceVersion": "29",
-                    "uid": "9ed07dbd-c970-42b4-8763-eab229459786"
+                    "resourceVersion": "25",
+                    "uid": "5bc5d69c-da96-4132-82d5-7a6159047ab3"
                 },
                 "spec": {
                     "finalizers": [
@@ -112,7 +112,7 @@
             },
             {
                 "metadata": {
-                    "creationTimestamp": "2023-07-30T15:59:07.000Z",
+                    "creationTimestamp": "2023-12-04T06:39:46.000Z",
                     "labels": {
                         "kubernetes.io/metadata.name": "kube-system"
                     },
@@ -128,61 +128,14 @@
                                     }
                                 }
                             },
-                            "manager": "kube-apiserver",
+                            "manager": "k3s",
                             "operation": "Update",
-                            "time": "2023-07-30T15:59:07.000Z"
+                            "time": "2023-12-04T06:39:46.000Z"
                         }
                     ],
                     "name": "kube-system",
-                    "resourceVersion": "14",
-                    "uid": "ffd080ab-e84e-4b5d-9ba4-be03274e0a04"
-                },
-                "spec": {
-                    "finalizers": [
-                        "kubernetes"
-                    ]
-                },
-                "status": {
-                    "phase": "Active"
-                }
-            },
-            {
-                "metadata": {
-                    "annotations": {
-                        "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"labels\":{\"addonmanager.kubernetes.io/mode\":\"Reconcile\",\"kubernetes.io/minikube-addons\":\"dashboard\"},\"name\":\"kubernetes-dashboard\"}}\n"
-                    },
-                    "creationTimestamp": "2023-07-30T18:44:23.000Z",
-                    "labels": {
-                        "addonmanager.kubernetes.io/mode": "Reconcile",
-                        "kubernetes.io/metadata.name": "kubernetes-dashboard",
-                        "kubernetes.io/minikube-addons": "dashboard"
-                    },
-                    "managedFields": [
-                        {
-                            "apiVersion": "v1",
-                            "fieldsType": "FieldsV1",
-                            "fieldsV1": {
-                                "f:metadata": {
-                                    "f:annotations": {
-                                        ".": {},
-                                        "f:kubectl.kubernetes.io/last-applied-configuration": {}
-                                    },
-                                    "f:labels": {
-                                        ".": {},
-                                        "f:addonmanager.kubernetes.io/mode": {},
-                                        "f:kubernetes.io/metadata.name": {},
-                                        "f:kubernetes.io/minikube-addons": {}
-                                    }
-                                }
-                            },
-                            "manager": "kubectl-client-side-apply",
-                            "operation": "Update",
-                            "time": "2023-07-30T18:44:23.000Z"
-                        }
-                    ],
-                    "name": "kubernetes-dashboard",
-                    "resourceVersion": "4844",
-                    "uid": "e8555df8-818d-4c00-b989-1813ac2aac26"
+                    "resourceVersion": "10",
+                    "uid": "b3044b73-3889-4e10-a8b3-3a3c07b32010"
                 },
                 "spec": {
                     "finalizers": [
@@ -196,7 +149,7 @@
         ],
         "kind": "NamespaceList",
         "metadata": {
-            "resourceVersion": "7179"
+            "resourceVersion": "18730"
         }
     }
 }
