@@ -14,6 +14,9 @@ curl -sfL https://get.k3s.io | K3S_URL=https://192.168.0.128:6443 K3S_TOKEN=$SEC
 # run rancher container
 sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher:latest
 
+# k3s config file
+cat /etc/rancher/k3s/config
+
 # get .sh files for k3s
 ls /usr/local/bin/
 
