@@ -15,16 +15,27 @@ minikube service <service_name> --url
 
 
 kubectl top nodes
+
 kubectl apply -f <filename>
+
 kubectl get all -o wide
+
 kubectl get nodes -o wide
+
 kubectl logs <pod_name>
+
 kubectl delete deployment <deployment_name>
+
 kubectl port-forward service/<service_name> 30001:3000
+
 kubectl api-resources
+
 kubectl cluster-info*
+
 kubectl cluster-info dump
+
 kubectl config view
+
 kubectl describe node 
 
 
